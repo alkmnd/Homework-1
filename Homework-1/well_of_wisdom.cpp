@@ -48,6 +48,10 @@ void Out(const well_of_wisdom* wisdom, FILE* output_file) {
 }
 int GetQuotient(const well_of_wisdom* wisdom) {
     int counter = 0;
+    if(strlen(wisdom->content)==0){
+        printf("Length could not be 0!\n");
+        return 0;
+    }
     for (int i = 0; i < strlen(wisdom->content); ++i) {
         if(wisdom->content[i]=='.'||wisdom->content[i]==','
         ||wisdom->content[i]=='!'||wisdom->content[i]=='?')

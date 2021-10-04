@@ -1,3 +1,5 @@
+// Вариант: 10   Функция: 9 
+
 #include <iostream>
 #include "container.h"
 #include <cstdlib>
